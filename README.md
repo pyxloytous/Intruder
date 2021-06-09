@@ -99,11 +99,17 @@ A python scapy based port scanner has been introduced to tackle the situation wh
 
         
  [+] IP-Address:  192.168.150.26
+ 
  [+] PORT-RANGE:  1-65535
+ 
  [+] THREADS (-N) set to DEFAULT:  100
- [-] PROTOCOL-TYPE:  TCP
- [-] SCANNER-TYPE:  nmap
- [-] OUT-PUT path for Nmap Result:  /root/Desktop/test/development_test
+ 
+ [+] PROTOCOL-TYPE:  TCP
+ 
+ [+] SCANNER-TYPE:  nmap
+ 
+ [+] OUT-PUT path for Nmap Result:  /root/Desktop/test/development_test
+
 
 
 
