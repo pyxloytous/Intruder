@@ -123,5 +123,5 @@ A python scapy based port scanner has been introduced to tackle the situation wh
 
 [*]  STAT-TIME of scan:  2021-06-09 04:00:05
 
-[*] Starting TCP-light port scan on 192.168.150.26: 70-85
+[*] Starting TCP-light port scan on 192.168.150.26: 1-65535
 
