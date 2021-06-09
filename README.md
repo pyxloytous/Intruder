@@ -34,7 +34,7 @@ What makes it different is that it facilitates us to see the output of ongoing s
 
 This functionality gives this an enhanced ability to allow someone for continue his work based on the output he starts getting instead keep waiting for a long time to let the all scripts finish and then see what outcome they have brought in terminal.
 
-Nmap is a powerful tool for port scanning and service scanning also but in some situation during scan it becomes too slow or almost gets stuck. To deal this this script has a feature been introduces to it that works purely on python.
+Nmap is a powerful tool for port scanning and service scanning also but in some situation during scan it becomes too slow or almost gets stuck. To deal with this, this script has a feature been introduced to it that works purely on python.
 
 A python scapy based port scanner has been introduced to tackle the situation where nmap starts failing. Though python does not have that much concurrency compared to lua the nmap is scripted on but something is better than nothing and this allows one to continue his work other than keep waiting for a long time or get stuck totally.
 
