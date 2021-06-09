@@ -61,3 +61,67 @@ A python scapy based port scanner has been introduced to tackle the situation wh
     Example:  python3 IntruDer.py -IP 192.168.116.131 -R 1-65535 -N 100 -T TCP -O /root/Desktop/test -M python - (Initial scanning with python function )
     
     
+    
+    
+    A glimps of the execution of this script
+    ----------------------------------------
+    
+    # intruder -IP 192.168.150.26 -R 1-65535 -N 100 -T TCP -O /root/Desktop/test/Tico/development_test -M nmap     
+
+
+      _____________________________________________________________________________________________________
+     //----------------------------------------------------------------------------------------------------\\
+     ||                                                                                                    || 
+     ||   8888888 888b    888 88888888888 8888888b.  888     888 8888888b.  8888888888 8888888b            ||
+     ||     888   8888b   888     888     888   Y88b 888     888 888  "Y88b 888        888   Y88b          ||
+     ||     888   88888b  888     888     888    888 888     888 888    888 888        888    888          ||
+     ||     888   888Y88b 888     888     888   d88P 888     888 888    888 8888888    888   d88P          ||
+     ||     888   888 Y88b888     888     8888888P"  888     888 888    888 888        8888888P            ||         
+     ||     888   888  Y88888     888     888 T88b   888     888 888    888 888        888 T88b            ||
+     ||     888   888   Y8888     888     888  T88b  Y88b. .d88P 888  .d88P 888        888  T88b           || 
+     ||   8888888 888    Y888     888     888   T88b  "Y88888P"  8888888P"  8888888888 888   T88b          ||
+     ||                                                                                                    ||
+     ||                              +-+-+-+-+-+-+-+-+-+-+-+-+-+                                           ||
+     ||                              |T|H|E| |A|U|T|O|M|A|T|E|R|                                           ||
+     ||                              +-+-+-+-+-+-+-+-+-+-+-+-+-+                                           ||
+     ||                                                                                                    ||
+     ||                                      +-+-+-+-+                                                     ||
+     ||                                      |f|r|o|m|                                                     ||
+     ||                                      +-+-+-+-+                                                     ||
+     ||                                                                                                    ||
+     ||                      +-+-+-+-+-+-+-+--+-+--+-+-+-+-+-+-+-+-+-+-+-+                                 ||
+     ||                      |p|y|x|l|o|y|t|o|u|s| |@| |g|m|a|i|l|.|c|o|m|                                 ||
+     ||                      +-+-+-+-+-+-+-+-+-+-+--+--+-+-+-+-+-+-+-+-+-+                                 ||
+     \\____________________________________________________________________________________________________//
+      -----------------------------------------------------------------------------------------------------
+
+
+
+        
+ [+] IP-Address:  192.168.150.26
+ [+] PORT-RANGE:  1-65535
+ [+] THREADS (-N) set to DEFAULT:  100
+ [-] PROTOCOL-TYPE:  TCP
+ [-] SCANNER-TYPE:  nmap
+ [-] OUT-PUT path for Nmap Result:  /root/Desktop/test/development_test
+
+
+
+[+]  Below word-list files is/are present - Good to go :) 
+
+	"/root/Desktop/My_share/Dropbox/OSCP/wordlist_mine/my_username_list.txt"
+
+	"/root/Desktop/My_share/Dropbox/OSCP/wordlist_mine/my_password_list.txt"
+
+	"/usr/share/wordlists/dirb/common.txt"
+
+[+]  Below FOLDER to save output of verious scripts present - Good to go :) 
+
+	 /root/Desktop/test/development_test  
+
+[*]  TCP port scan STARTED....
+
+[*]  STAT-TIME of scan:  2021-06-09 04:00:05
+
+[*] Starting TCP-light port scan on 192.168.150.26: 70-85
+
