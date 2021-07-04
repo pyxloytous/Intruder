@@ -1277,7 +1277,7 @@ def go_throuh_services(ip, service, port_list, verbosity, protocol_type='p_type'
                {CY}example: \'smtp-user-enum -M VRFY -U /usr/share/wordlists/fuzzdb/wordlists-user-passwd/names/namelist.txt -t {ip} -p {port} | tee output_path/smtp_user_enum_VRFY_{ip}_{port}.txt\''''
             
             print(f'{CLG}[*] {CY} Please execute below command for SMTP manual enumaration')
-            print(f'           {CY} COMMAND: {CW} {messaage} \n')
+            print(f'           {CY} COMMAND: {CW} {message} \n')
          
 
 
@@ -1428,15 +1428,15 @@ def go_throuh_services(ip, service, port_list, verbosity, protocol_type='p_type'
                               '''
 
             POP3_BRUTE = f'nmap -p {port} --script=pop3-brute.nse -oN {output_path}/{ip}_POP3_brute_{port} {ip}'
-            print(f'{CLG}[+] {CY} COMMAND: {CC} {ZONE_ZXFR} \n') 
+            print(f'{CLG}[+] {CY} COMMAND: {CC} {POP3_BRUTE} \n') 
 
-            command_list.append(SNMP_ENUM)
+            command_list.append(POP3_BRUTE)
 
             if verbosity:
-                print(f'           {CY} COMMAND: {CW} {ZONE_ZXFR}\n') 
+                print(f'           {CY} COMMAND: {CW} {POP3_BRUTE}\n') 
 
             print(f'{CLG}[*] {CY} Commands to run to Connect to POP3 serviceer manually')
-            print(f'        {CLB}{Cmd_To_Try-message}\n')
+            print(f'        {CLB}{Cmd_To_Try_message}\n')
 
 
 
@@ -1772,16 +1772,3 @@ def main():
 
 if __name__=='__main__':
     main()
-
-
-
-
-
-
-
-
-
-
-
-
-
