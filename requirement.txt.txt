@@ -1,0 +1,3 @@
+colorama        # For colored terminal output
+scapy           # For packet crafting and port scanning
+impacket        # For SMB enumeration and file share listing
