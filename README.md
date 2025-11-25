@@ -26,18 +26,28 @@
       -----------------------------------------------------------------------------------------------------
       
 
-A CTF scanner that automates the task from port scanning to assessing several services on the target.
+Intruder – Automated CTF & Vulnerability Scanner
+The Intruder scanner is a comprehensive tool that automates the entire workflow of Capture the Flag (CTF) reconnaissance and vulnerability assessment — from port scanning to service‑specific exploitation checks.
 
-It has almost all the ability that is found in several other scripts in the wild like this.
+🔑 Core Capabilities
+Dual Port Scanning Approach
 
-What makes it different is that it facilitates us to see the output of ongoing scans in separate terminal tabs.
+TCP scanning is handled by Nmap, leveraging its reliable SYN handshake methodology.
 
-This functionality gives this an enhanced ability to allow someone for continue his work based on the output he starts getting instead keep waiting for a long time to let the all scripts finish and then see what outcome they have brought in terminal.
+UDP scanning is powered by a Python Scapy‑based engine, which uses ICMP packet analysis to infer port states. After 2–3 retries, if no ICMP Type 3 (Port Unreachable) messages are received, the port is assumed to be reachable/open, and further probes are sent to identify running services. This makes UDP scanning faster and more resilient than Nmap’s default UDP process.
 
-Nmap is a powerful tool for port scanning and service scanning also but in some situation during scan it becomes too slow or almost gets stuck. To deal with this, this script has a feature been introduced to it that works purely on python.
+Service‑Aware Vulnerability Scanning
 
-A python scapy based port scanner has been introduced to tackle the situation where nmap starts failing. Though python does not have that much concurrency compared to lua the nmap is scripted on but something is better than nothing and this allows one to continue his work other than keep waiting for a long time or get stuck totally.
+Once open ports are identified, the script automatically invokes targeted scanners such as HTTP analyzers, SSL testers, SQL injection probes, and more, tailoring assessments to the detected services.
 
+Parallel Execution in Separate Tabs
+
+Each scan runs in its own terminal tab, allowing results to stream in real time. Analysts can begin reviewing findings immediately instead of waiting for all scripts to finish, dramatically reducing idle time and improving workflow efficiency.
+
+🚀 Differentiators
+Unlike many existing scripts, Intruder combines real‑time visibility, Scapy‑based UDP resilience, and multi‑scanner orchestration. This design ensures that users can continue working productively even when Nmap slows down or stalls, while simultaneously gathering vulnerability insights across multiple services.
+
+👉 In short: Intruder automates reconnaissance, accelerates UDP scanning with Scapy, and orchestrates multiple vulnerability checks in parallel tabs — enabling faster, more efficient CTF and penetration testing workflows.
 
 
 
