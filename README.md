@@ -36,11 +36,11 @@ TCP scanning is handled by Nmap, leveraging its reliable SYN handshake methodolo
 
 UDP scanning is powered by a Python Scapy‑based engine, which uses ICMP packet analysis to infer port states. After 2–3 retries, if no ICMP Type 3 (Port Unreachable) messages are received, the port is assumed to be reachable/open, and further probes are sent to identify running services. This makes UDP scanning faster and more resilient than Nmap’s default UDP process.
 
-Service‑Aware Vulnerability Scanning
+👉Service‑Aware Vulnerability Scanning
 
 Once open ports are identified, the script automatically invokes targeted scanners such as HTTP analyzers, SSL testers, SQL injection probes, and more, tailoring assessments to the detected services.
 
-Parallel Execution in Separate Tabs
+👉Parallel Execution in Separate Tabs
 
 Each scan runs in its own terminal tab, allowing results to stream in real time. Analysts can begin reviewing findings immediately instead of waiting for all scripts to finish, dramatically reducing idle time and improving workflow efficiency.
 
